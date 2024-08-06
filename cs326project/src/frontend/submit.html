@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Event</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body class="submit-view">
+    <div class="form-container">
+        <h1>Submit Event</h1>
+        <form>
+            <fieldset>
+                <legend>Submitter Information</legend>
+                <label for="name" class="required">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" class="required">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone (###-###-####):</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </fieldset>
+
+            <fieldset>
+                <legend>Event Information</legend>
+                <label for="event-title" class="required">Event title:</label>
+                <br>
+                <input type="text" id="event-title" name="event_title" required>
+
+                <br>
+                <label for="location" class="required">Location:</label>
+                <br>
+                <select id="location" name="location" required>
+                    <option value="online">Online</option>
+                    <!-- Include all relevant campus locations -->
+                </select>
+
+                <br>
+                <label for="start-date" class="required">Start date:</label>
+                <br>
+                <input type="date" id="start-date" name="start_date" required>
+
+                <br>
+                <label for="start-time" class="required">Time:</label>
+                <br>
+                <input type="time" id="start-time" name="start_time" required>
+
+                <br>
+                <label for="duration" class="required">Duration:</label>
+                <br>
+                <select id="duration" name="duration" required>
+                    <option value="1 hour">1 hour</option>
+                    <option value="2 hours">2 hours</option>
+                    <!-- Additional options as necessary -->
+                </select>
+                <br>
+                <label for="event-description" class="required">Event description:</label>
+                <br>
+                <textarea id="event-description" name="event_description" rows="4" required></textarea>
+            </fieldset>
+
+                <button type="submit" onclick="alert('Event submitted')">Submit Event</button>
+        </form>
+    </div>
+    <div class="events-footer">
+        <button class="navigation-button" onclick="location.href='allevents.html'">All Events</button>
+        <button class="navigation-button" onclick="location.href='events.html'">Your Events</button>
+        <button class="navigation-button" onclick="location.href='personal.html'">Home</button>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

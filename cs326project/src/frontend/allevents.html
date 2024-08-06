@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse All Events</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="event-container">
+        <img src="up.png" alt="Up Image" style="display: block; margin: 0 auto;">
+    </div>
+</head>
+<body class="all-events-view">
+    <div class="events-container">
+        <h1 class="event-header">Browse All Events</h1>
+
+        <button class="filter-button" onclick="showFilterOptions()">Filter</button>
+
+        <div id="filter-options" style="display: none;">
+            <label for="time-filter">Time:</label>
+            <select id="time-filter">
+            <option value="all">All</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+            </select>
+
+            <label for="subscribed-filter">Most Subscribed:</label>
+            <select id="subscribed-filter">
+            <option value="all">All</option>
+            <option value="top">Top</option>
+            <option value="popular">Popular</option>
+            </select>
+
+            <label for="interest-filter">Interest:</label>
+            <select id="interest-filter">
+            <option value="all">All</option>
+            <option value="tech">Tech</option>
+            <option value="health">Health</option>
+            <option value="education">Education</option>
+            </select>
+
+            <button onclick="applyFilters()">Apply</button>
+        </div>
+
+        <!-- Example events based on generic data -->
+        <div class="event">
+            <div class="event-info">
+                <span class="event-time">9:00 a.m. - 10:00 a.m.</span>
+                <span class="event-title">Morning Yoga</span>
+                <span class="event-location">@ Health Center</span>
+            </div>
+            <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+        </div>
+        
+        <!-- Example Event 2 -->
+        <!-- Example Event 2 -->
+        <div class="event">
+            <div class="event-info">
+            <span class="event-time">10:30 a.m. - 11:30 a.m.</span>
+            <span class="event-title">Panel Discussion</span>
+            <span class="event-location">@ Auditorium</span>
+            </div>
+            <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>        </div>
+        
+        <!-- Example Event 3 -->
+        <div class="event">
+            <div class="event-info">
+            <span class="event-time">2:00 p.m. - 3:00 p.m.</span>
+            <span class="event-title">Workshop: Web Development</span>
+            <span class="event-location">@ Computer Lab</span>
+            </div>
+            <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>        </div>
+
+        <!-- Example Event 4 -->
+        <div class="event">
+            <div class="event-info">
+            <span class="event-time">4:30 p.m. - 5:30 p.m.</span>
+            <span class="event-title">Networking Mixer</span>
+            <span class="event-location">@ Student Union</span>
+            </div>
+            <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>        </div>
+        
+        <!-- Example Event 3 -->
+        <div class="event">
+            <div class="event-info">
+                <span class="event-time">6:00 p.m. - 7:30 p.m.</span>
+                <span class="event-title">Tech Networking Event</span>
+                <span class="event-location">@ Downtown Conference Center</span>
+            </div>
+            <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>        </div>
+
+        <!-- Add more events as needed -->
+        <!-- Example Event 5 -->
+        <div class="event">
+            <div class="event-info">
+                <span class="event-time">8:00 a.m. - 9:00 a.m.</span>
+                <span class="event-title">Breakfast Seminar</span>
+                <span class="event-location">@ Cafeteria</span>
+            </div>
+            <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>        </div>
+
+        <!-- Example Event 6 -->
+        <div class="event">
+            <div class="event-info">
+                <span class="event-time">12:00 p.m. - 1:00 p.m.</span>
+                <span class="event-title">Lunchtime Lecture</span>
+                <span class="event-location">@ Lecture Hall</span>
+            </div>
+            <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>        </div>
+
+        <!-- Example Event 7 -->
+        <div class="event">
+            <div class="event-info">
+                <span class="event-time">6:30 p.m. - 8:00 p.m.</span>
+                <span class="event-title">Evening Concert</span>
+                <span class="event-location">@ Outdoor Amphitheater</span>
+            </div>
+            <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>        </div>
+            <!-- Example Event 8 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">9:30 a.m. - 10:30 a.m.</span>
+                    <span class="event-title">Coding Workshop</span>
+                    <span class="event-location">@ Computer Lab</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 9 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">1:00 p.m. - 2:00 p.m.</span>
+                    <span class="event-title">Art Exhibition</span>
+                    <span class="event-location">@ Art Gallery</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 10 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">3:30 p.m. - 4:30 p.m.</span>
+                    <span class="event-title">Movie Screening</span>
+                    <span class="event-location">@ Theater</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 11 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">5:00 p.m. - 6:00 p.m.</span>
+                    <span class="event-title">Panel Discussion: Future of Technology</span>
+                    <span class="event-location">@ Conference Room</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 12 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">7:00 p.m. - 8:30 p.m.</span>
+                    <span class="event-title">Music Concert</span>
+                    <span class="event-location">@ Stadium</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 13 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">9:00 a.m. - 10:00 a.m.</span>
+                    <span class="event-title">Breakfast Seminar</span>
+                    <span class="event-location">@ Cafeteria</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 14 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">12:00 p.m. - 1:00 p.m.</span>
+                    <span class="event-title">Lunchtime Lecture</span>
+                    <span class="event-location">@ Lecture Hall</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 15 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">3:00 p.m. - 4:30 p.m.</span>
+                    <span class="event-title">Workshop: Graphic Design</span>
+                    <span class="event-location">@ Design Studio</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 16 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">5:30 p.m. - 6:30 p.m.</span>
+                    <span class="event-title">Networking Event</span>
+                    <span class="event-location">@ Business Center</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+
+            <!-- Example Event 17 -->
+            <div class="event">
+                <div class="event-info">
+                    <span class="event-time">7:30 p.m. - 9:00 p.m.</span>
+                    <span class="event-title">Film Festival</span>
+                    <span class="event-location">@ Cinema</span>
+                </div>
+                <button class="subscribe-button" onclick="alert('Subscribed!')">Subscribe</button>
+            </div>
+        
+    </div>
+
+        <!-- Repeat the above block for as many events as needed -->
+        
+        <!-- Placeholder for actual events when database is connected -->
+        
+    </div>
+    <div class="events-footer">
+        <button class="navigation-button" onclick="location.href='submit.html'">Submit Events</button>
+        <button class="navigation-button" onclick="location.href='events.html'">Your Events</button>
+        <button class="navigation-button" onclick="location.href='personal.html'">Home</button>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

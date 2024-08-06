@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalize Your Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="personal-view">
+    <div class="container">
+        <div class="header">
+            <img src="up.jpg" alt="UP! Logo">
+            <h2>Personalize Your Experience</h2>
+        </div>
+        
+        <!-- Interest Selection Section -->
+        <div class="interests-section">
+            <h3 class="interests-header">Pick your interests</h3>
+            <!-- Dropdown for interest categories -->
+            <select id="interest-category" name="category">
+                <option value="social">Social</option>
+                <option value="physical">Physical</option>
+                <option value="technology">Technology</option>
+                <option value="creative">Creative</option>
+            </select>
+            <div class="interests-container">
+            <!-- Sample Interests - you would populate this with real interests -->
+            <div class="interest social">Festivals</div>
+            <div class="interest social">Meet and Greet</div>
+            <div class="interest social">Talent Show</div>
+            <div class="interest social">Debate Competition</div>
+            <div class="interest physical">Soccer</div>
+            <div class="interest physical">Basketball</div>
+            <div class="interest physical">Hiking</div>
+            <div class="interest physical">Swimming</div>
+            <div class="interest technology">Virtual Reality</div>
+            <div class="interest technology">Video Games</div>
+            <div class="interest technology">Computers</div>
+            <div class="interest technology">Coding</div>
+            <div class="interest creative">Art</div>
+            <div class="interest creative">Videos</div>
+            <div class="interest creative">Drama</div>
+            <!-- Add more interests as needed -->
+            </div>
+        </div>
+        <div class="interests-footer">
+            <button class="add-interest-btn" onclick="showPopupForm()">Add it here! +</button>
+        </div>
+        <div id="popup-form" class="popup-form">
+            <h3>Add Interest</h3>
+            <form onsubmit="addInterest(); return false;">
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+                <label for="interest">Interest:</label>
+                <input type="text" id="interest" name="interest" required>
+                <button type="submit">Add</button>
+                <button type="button" onclick="closePopupForm()">Cancel</button>
+            </form>
+        </div>
+            <!-- Personality Slider Section -->
+            <div class="personality-slider-section">
+                <label for="personality-range">Introverted or Extroverted</label>
+                <input type="range" id="personality-range" name="personality" min="0" max="100">
+            </div>
+        </div>
+
+        <!-- Navigation Button -->
+        <button class="navigation-button" onclick="location.href='schedule.html'">Next</button>
+    </div>
+
+ 
+    <script src="main.js"></script>
+</body>
+</html>

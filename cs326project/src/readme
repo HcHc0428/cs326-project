@@ -1,0 +1,26 @@
+# UP umass event page
+
+## Project Overview
+This is my COMP 326  project that implements front end and back end to create a working website. This website is an event management system designed for a university environment. Users will be able to create an account, sign in, browse and subscribe to events, view their subscribed events, and manage their account settings.
+
+
+### How to Run 
+First Clone the repository,then you need to run npm install,and then run npm start to start the server,lastly we go to `http://localhost:3260`
+
+
+
+### User Authentication
+Not yet
+
+#### Sign Up
+Endpoint: /signup
+Method: POST
+Body:
+
+### Technology Use
+
+Front-end: CSS, HTML, JS
+Back-end: Express.js Node.js,
+Database: PouchDB
+Version Control: GitHub
+
